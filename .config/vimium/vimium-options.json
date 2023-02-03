@@ -1,0 +1,26 @@
+{
+  "settingsVersion": "1.67",
+  "exclusionRules": [
+    {
+      "pattern": "https?://mail.google.com/*",
+      "passKeys": ""
+    }
+  ],
+  "filterLinkHints": false,
+  "waitForEnterForFilteredHints": true,
+  "hideHud": false,
+  "keyMappings": "unmap G\nunmap g0\nunmap g$\nunmap x\nunmap X\nunmap ^\nunmap <a-m>\nunmap <a-p>\nunmap <c-e>\nunmap <c-y>\nmap ge scrollToBottom\nmap gp visitPreviousTab\nmap d removeTab\nmap u restoreTab",
+  "linkHintCharacters": "aoeuhtnsidjkwm",
+  "linkHintNumbers": "0123456789",
+  "newTabUrl": "about:newtab",
+  "nextPatterns": "next,more,newer,>,›,→,»,≫,>>",
+  "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
+  "regexFindMode": false,
+  "ignoreKeyboardLayout": false,
+  "scrollStepSize": 60,
+  "smoothScroll": true,
+  "grabBackFocus": false,
+  "searchEngines": "w: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\ng: https://www.google.com/search?q=%s Google\ny: https://www.youtube.com/results?search_query=%s Youtube\nm: https://www.google.com/maps?q=%s Google maps\nd: https://duckduckgo.com/?q=%s DuckDuckGo",
+  "searchUrl": "https://www.google.com/search?q=",
+  "userDefinedLinkHintCss": "div > .vimiumHintMarker {\nbackground: yellow;\nborder: 1px solid orange;\n}\ndiv > .vimiumHintMarker span {\ncolor: black;\nfont-weight: bold;\nfont-size: 12px;\n}\ndiv > .vimiumHintMarker > .matchingCharacter {\n}"
+}

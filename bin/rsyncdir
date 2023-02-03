@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+[ -z "$1" ] || [ -z "$2" ] && echo "Usage: $(basename $0) PATH DEST" && exit 1
+
+args=(-rvlc --delete)
+read -r -p "Only *.txt, cover.*? (y/n) " yn
+[ "$yn" = "y" ] && args+=(--include='*/' --include='*.txt' --include='cover.*' --exclude='*')
+args+=("$1" "$2")
+
+rsync --dry-run "${args[@]}"
+echo
+read -r -p "Does this look right? (y/n) " yn
+[ "$yn" = "y" ] && rsync "${args[@]}"
